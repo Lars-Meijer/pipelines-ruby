@@ -12,8 +12,6 @@ steps:
     versionSpec: '>= 2.5'
 
 - script: |
-    gem install bundler
-    bundle update
     bundle install --retry=3 --jobs=4
   displayName: 'bundle install'
 
